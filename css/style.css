@@ -1,0 +1,76 @@
+body{
+  background: #888;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container{
+  position: absolute;
+  background: #444;
+  top: 200px;
+  bottom: 0;
+  width: 100%;
+  height:400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+
+.user{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+  width: 120px;
+  height: 120px;
+  background: #ed145b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 7px rgba(0,0,0,0.3);
+}
+
+.login-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+input[type=text],
+input[type=password] {
+  background: #fff;
+  color: #333;
+  height: 25px;
+  width: 80%;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px 5px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    box-shadow: 0 0 5px 1px #53F4FF;
+}
+
+.login-button{
+  background: #525465;
+  border-radius: 3px;
+  padding: 10px 20px;
+  box-shadow:  0 2px 3px 3px rgba(0,0,0,0.2);
+}
+
+.login-button a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}

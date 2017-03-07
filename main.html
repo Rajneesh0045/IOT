@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>IOT</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="header">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <div class="user"><i class="fa fa-user-o" aria-hidden="true"></i><p>Anirban</p></div>
+    </div>
+    <div class="devices">
+      <div class="device">
+        <div class="indicator active"></div>
+        <div class="device-name">Device Name</div>
+        <div class="uid">UID <div class="space"></div></div>
+      </div>
+      <div class="device">
+        <div class="indicator active"></div>
+        <div class="device-name">Device Name</div>
+        <div class="uid">UID <div class="space"></div></div>
+      </div>
+      <div class="device">
+        <div class="indicator non-active"></div>
+        <div class="device-name">Device Name</div>
+        <div class="uid">UID <div class="space"></div></div>
+      </div>
+      <div class="device">
+        <div class="indicator active"></div>
+        <div class="device-name">Device Name</div>
+        <div class="uid">UID <div class="space"></div></div>
+      </div>
+      <div class="device">
+        <div class="indicator non-active"></div>
+        <div class="device-name">Device Name</div>
+        <div class="uid">UID <div class="space"></div></div>
+      </div>
+    </div>
+    <div class="add-device"><i class="fa fa-plus" aria-hidden="true"></i></div>
+    <div class="overlay"></div>
+
+    <div class="menu">
+    <div class="user-info">
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      <name>Anirban</name>
+      <mail>anirbanghosh@gmail.com</mail>
+    </div>
+    <div class="report">
+      <h4>REPORTING</h4>
+      <ul>
+        <li>By User</li>
+        <li>By Admin</li>
+      </ul>
+    </div>
+    <div class="d-manage">
+      <h4>DEVICE MANAGEMENT</h4>
+      <ul>
+        <li><i class="fa fa-plus-circle" aria-hidden="true"></i>Add Device</li>
+        <li><i class="fa fa-minus-circle" aria-hidden="true"></i>Remove Device</li>
+      </ul>
+    </div>
+    <div class="u-manage">
+      <h4>USER MANAGEMENT</h4>
+      <ul>
+        <li><i class="fa fa-plus-circle" aria-hidden="true"></i>Add User</li>
+        <li><i class="fa fa-times-circle" aria-hidden="true"></i>Delete User</li>
+        <li><i class="fa fa-cog" aria-hidden="true"></i>Modify User</li>
+      </ul>
+    </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+      $('.fa-bars').click(function() {
+        $('.overlay').fadeIn(300);
+        $('.menu').toggleClass('drag');
+      });
+
+      $('.overlay').click(function() {
+        $('.menu').toggleClass('drag');
+        $('.overlay').fadeOut(300);
+      })
+    </script>
+  </body>
+</html>
